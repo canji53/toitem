@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "moduleResolution": "node",
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["typings/*", "node_modules/@types/*"]
+    },
+    // モジュールが default export を指定していなくても利用可能
+    "allowSyntheticDefaultImports": true,
+    // CommonJS と ES Modules 間で相互運用可能なコードを出力
+    "esModuleInterop": true,
+    // ‘.json’拡張子のファイルをモジュールとしてインポートできるように
+    "resolveJsonModule": true,
+    // 利用されていない関数のパラメータについて、エラーを報告
+    "noUnusedParameters": true,
+    // 利用されていないローカル変数について、エラーを報告
+    "noUnusedLocals": true
+  }
+}

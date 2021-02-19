@@ -1,0 +1,28 @@
+{
+  "name": "@toitem/iac-cdk",
+  "version": "0.1.0",
+  "bin": {
+    "iac-cdk": "bin/iac-cdk.js"
+  },
+  "scripts": {
+    "tsc": "../../node_modules/.bin/tsc",
+    "jest": "../../node_modules/.bin/jest",
+    "cdk": "./node_modules/.bin/cdk",
+    "build": "yarn tsc",
+    "watch": "yarn tsc -w",
+    "test": "yarn jest"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.89.0",
+    "@types/jest": "^26.0.10",
+    "aws-cdk": "1.89.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudfront": "1.89.0",
+    "@aws-cdk/aws-iam": "1.89.0",
+    "@aws-cdk/aws-route53-targets": "1.89.0",
+    "@aws-cdk/aws-s3": "1.89.0",
+    "@aws-cdk/core": "1.89.0",
+    "source-map-support": "^0.5.16"
+  }
+}
