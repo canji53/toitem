@@ -1,0 +1,23 @@
+{
+  "name": "@toitem/serverless",
+  "version": "0.0.0",
+  "scripts": {
+    "sls": "./node_modules/.bin/sls"
+  },
+  "dependencies": {
+    "@middy/core": "^1.5.2",
+    "@middy/http-json-body-parser": "^1.5.2",
+    "source-map-support": "^0.5.19"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "^2.23.0",
+    "@types/aws-lambda": "^8.10.71",
+    "json-schema-to-ts": "^1.5.0",
+    "serverless": "^2.23.0",
+    "serverless-webpack": "^5.3.5",
+    "ts-loader": "^8.0.15",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "webpack": "^5.20.2",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
