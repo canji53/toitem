@@ -1,9 +1,6 @@
 {
   "name": "@toitem/iac-cdk",
-  "version": "0.1.0",
-  "bin": {
-    "iac-cdk": "bin/iac-cdk.js"
-  },
+  "version": "0.0.0",
   "scripts": {
     "tsc": "../../node_modules/.bin/tsc",
     "jest": "../../node_modules/.bin/jest",
