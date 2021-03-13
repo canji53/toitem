@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.json",
+  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    // どのecmascriptバージョンで出力するか
+    "target": "esnext",
+    // どのjsモジュールで出力するか
+    "module": "esnext",
+    // .jsと.jsxもコンパイル対象に含む
+    "allowJs": true,
+    // 各jsの先頭に"use strict"を挿入する
+    "alwaysStrict": true,
+    // ファイルの大文字小文字の違いをエラー扱いにする
+    "forceConsistentCasingInFileNames": true,
+    // nextはbabelトランスパイルなため、trueにする必要あり
+    "isolatedModules": true,
+    // babelコンパイルなため、"preserve"にする必要あり
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    // babelのため
+    "noEmit": true,
+    // switch-caseの際の、case処理が一文でもある場合はbreakを強制
+    "noFallthroughCasesInSwitch": true,
+    // 型定義ファイルの型チェックをスキップ
+    "skipLibCheck": true
+  }
+}
