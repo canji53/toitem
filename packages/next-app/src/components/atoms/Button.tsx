@@ -30,11 +30,11 @@ const ButtonNormalStyled = styled(ButtonCommonStyled).attrs((props) => ({
   form: props.form,
 }))<ButtonProps>`
   padding: 6px 42px;
-  border: ${(props) => `solid 1px ${props.theme.colors.thinColor}`};
+  border: ${(props) => `solid 1px ${props.theme.colors.thin}`};
   transition-duration: ${(props) => props.theme.interactions.transitionTime};
 
   &:hover {
-    border: ${(props) => `solid 1px ${props.theme.colors.baseThinColor}`};
+    border: ${(props) => `solid 1px ${props.theme.colors.baseThin}`};
   }
 `
 
@@ -55,13 +55,13 @@ const ButtonPrimaryButton = styled(ButtonCommonStyled).attrs((props) => ({
 }))<ButtonProps>`
   padding: 6px 24px;
   color: #fff;
-  background-color: ${(props) => props.theme.colors.conceptColor};
-  border: ${(props) => `solid 1px ${props.theme.colors.conceptColor}`};
+  background-color: ${(props) => props.theme.colors.concept};
+  border: ${(props) => `solid 1px ${props.theme.colors.concept}`};
   transition-duration: ${(props) => props.theme.interactions.transitionTime};
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.conceptHoverColor};
-    border: ${(props) => `solid 1px ${props.theme.colors.conceptHoverColor}`};
+    background-color: ${(props) => props.theme.colors.conceptHover};
+    border: ${(props) => `solid 1px ${props.theme.colors.conceptHover}`};
   }
 `
 

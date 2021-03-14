@@ -11,7 +11,7 @@ const Wrap = styled.div`
 
 const BadgeStyled = styled.div`
   padding: 6px;
-  background-color: ${(props) => props.theme.colors.conceptColor};
+  background-color: ${(props) => props.theme.colors.concept};
   line-height: ${(props) => props.theme.fontSize.xsmall};
   font-size: ${(props) => props.theme.fontSize.xsmall};
   color: #fff;

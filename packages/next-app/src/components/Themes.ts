@@ -1,18 +1,19 @@
 const colors = {
-  baseColor: '#555',
-  baseThinColor: '#5555',
-  conceptColor: '#d4c4b5',
-  conceptHoverColor: '#d4c4b5b7',
-  thinColor: '#f0f0f0', // 引用の背景色
-  linkColor: '#339af0',
-  hoverColor: '#999', // ホバー時の色
-  /* brandColors */
-  twitterColor: '#1da1f3',
-  facebookColor: '#3b5998',
-  pocketColor: '#ef4056',
-  hatebuColor: '#01a5df',
-  clipboardColor: '#aaa',
-  instagramColor: '#cf2e92',
+  basecolor: '#555',
+  baseThincolor: '#5555',
+  conceptcolor: '#d4c4b5',
+  conceptHovercolor: '#d4c4b5b7',
+  thincolor: '#f0f0f0', // 引用の背景色
+  linkcolor: '#339af0',
+  hovercolor: '#999', // ホバー時の色
+  attention: '#ff4500',
+  /* brandcolors */
+  twittercolor: '#1da1f3',
+  facebookcolor: '#3b5998',
+  pocketcolor: '#ef4056',
+  hatebucolor: '#01a5df',
+  clipboardcolor: '#aaa',
+  instagramcolor: '#cf2e92',
 }
 
 const fonts = {

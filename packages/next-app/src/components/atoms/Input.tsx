@@ -48,22 +48,21 @@ const InputStyled = styled.input.attrs((props) => ({
   width: 100%;
   padding: 8px;
   border: none;
-  border-bottom: ${(props) => `solid 1px ${props.theme.colors.thinColor}`};
+  border-bottom: ${(props) => `solid 1px ${props.theme.colors.thin}`};
   font-size: ${(props) => props.theme.fontSize.small};
-  color: ${(props) => props.theme.colors.baseColor};
+  color: ${(props) => props.theme.colors.base};
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   transition-duration: ${(props) => props.theme.interactions.transitionTime};
 
   &::placeholder {
-    color: ${(props) => props.theme.colors.baseThinColor};
+    color: ${(props) => props.theme.colors.baseThin};
   }
 
   &:focus {
     outline: none;
-    border-bottom: ${(props) =>
-      `solid 1px ${props.theme.colors.baseThinColor}`};
+    border-bottom: ${(props) => `solid 1px ${props.theme.colors.baseThin}`};
   }
 `
 
