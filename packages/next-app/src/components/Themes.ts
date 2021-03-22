@@ -12,8 +12,6 @@ const colors = {
   facebook: '#3b5998',
   pocket: '#ef4056',
   hatebu: '#01a5df',
-  clipboard: '#aaa',
-  instagram: '#cf2e92',
 }
 
 const fonts = {

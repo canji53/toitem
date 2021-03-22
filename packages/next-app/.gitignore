@@ -32,3 +32,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# To disable .gitignore for root.
+# In next.js, the directory where static files are stored is public
+# (related) https://nextjs.org/blog/next-9-1#public-directory-support
+!public
