@@ -6,12 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook -o .storybook/build"
+    "storybook": "start-storybook -p 6006 --static-dir ./src/public",
+    "storybook:build": "build-storybook -o .storybook/build --static-dir ./src/public"
   },
   "dependencies": {
     "@styled-icons/fa-brands": "^10.26.0",
     "@styled-icons/fa-solid": "^10.26.0",
+    "@styled-icons/simple-icons": "^10.29.0",
     "next": "^10.0.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

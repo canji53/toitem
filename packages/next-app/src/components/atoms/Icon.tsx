@@ -1,10 +1,7 @@
 import styled, { css } from 'styled-components'
 import { Twitter, FacebookF, GetPocket } from '@styled-icons/fa-brands'
 import { Link, InfoCircle, PaperPlane } from '@styled-icons/fa-solid'
-
-export type BaseIconProps = {
-  children?: React.ReactNode
-}
+import { Hatenabookmark } from '@styled-icons/simple-icons'
 
 const SharedIconStyle = css`
   height: 16px;
@@ -34,6 +31,13 @@ const GetPocketIconStyled = styled(GetPocket)`
   }
 `
 
+const HatenaBookmarkIconStyled = styled(Hatenabookmark)`
+  ${SharedIconStyle}
+  &:hover {
+    color: ${(props) => props.theme.colors.hatebu};
+  }
+`
+
 const CopyLinkIconStyled = styled(Link)`
   ${SharedIconStyle}
   &:hover {
@@ -55,26 +59,51 @@ const PaperPlaneIconStyled = styled(PaperPlane)`
   }
 `
 
-export function TwitterIcon(props: BaseIconProps) {
-  return <TwitterIconStyled>{props.children}</TwitterIconStyled>
+export function TwitterIcon() {
+  return <TwitterIconStyled />
 }
 
-export function FacebookIcon(props: BaseIconProps) {
-  return <FacebookIconStyled>{props.children}</FacebookIconStyled>
+export function FacebookIcon() {
+  return <FacebookIconStyled />
 }
 
-export function GetPocketIcon(props: BaseIconProps) {
-  return <GetPocketIconStyled>{props.children}</GetPocketIconStyled>
+export function GetPocketIcon() {
+  return <GetPocketIconStyled />
 }
 
-export function CopyLinkIcon(props: BaseIconProps) {
-  return <CopyLinkIconStyled>{props.children}</CopyLinkIconStyled>
+export function HatenaBookmarkIcon() {
+  return <HatenaBookmarkIconStyled />
 }
 
-export function InfoCircleIcon(props: BaseIconProps) {
-  return <InfoCircleIconStyled>{props.children}</InfoCircleIconStyled>
+export function CopyLinkIcon() {
+  return <CopyLinkIconStyled />
 }
 
-export function PaperPlaneIcon(props: BaseIconProps) {
-  return <PaperPlaneIconStyled>{props.children}</PaperPlaneIconStyled>
+export function InfoCircleIcon() {
+  return <InfoCircleIconStyled />
+}
+
+export function PaperPlaneIcon() {
+  return <PaperPlaneIconStyled />
+}
+
+//
+
+export type ImageIconProps = {
+  src: string
+  alt: string
+}
+
+const ImageIconStyled = styled.img.attrs((props) => ({
+  src: props.src,
+  alt: props.alt,
+}))`
+  ${SharedIconStyle}
+  &:hover {
+    opacity: ${(props) => props.theme.interactions.opacityRate};
+  }
+`
+
+export function ImageIcon(props: ImageIconProps) {
+  return <ImageIconStyled {...props} />
 }
